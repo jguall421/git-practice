@@ -5,6 +5,16 @@ def max_value(numbers):
             max = number
 
     return max
+    """ This function returns the largest number
+        in the list.
+    """
+    result = []
+    largest = 0
+    for item in numbers:
+        if item > largest:
+            largest = item
+    result.append(largest)
+    return result
 
 
 if __name__ == "__main__":
