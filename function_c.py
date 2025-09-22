@@ -1,9 +1,12 @@
 def merge_lists(list_a, list_b):
-    """ Returns a new list which is
-        a combination of list_a and list_b
-        without any duplicate elements.
-    """
-    pass
+    result = []
+    for item in list_a:
+        if item not in result:
+            result.append(item)
+    for item in list_b:
+        if item not in result:
+            result.append(item)
+    return result
 
 
 if __name__ == "__main__":
